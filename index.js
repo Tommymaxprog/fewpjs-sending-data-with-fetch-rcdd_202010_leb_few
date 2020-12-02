@@ -20,14 +20,14 @@ return fetch("http://localhost:3000/users",
   let p=document.createElement("p");
   let a=object.id
   p.innerHTML=a;
-  body.appendChild(p);
+  document.body.appendChild(p);
 })
   .catch(function(error)
   {
     let p=document.createElement("p");
   let a=error.message;
   p.innerHTML=a;
-  body.appendChild(p);
+  document.body.appendChild(p);
   })
 }
 
